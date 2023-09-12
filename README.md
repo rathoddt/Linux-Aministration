@@ -7,7 +7,7 @@ History of Linux commands withou line number
 Finding multiple patterns
 `grep -E 'pattern1|pattern2' fileName_or_filePath`   
 
-# Vi Editor
+## Vi Editor
 If you are in `vi editor` to open other ther without closing current one    
 
 type `:e path-of-file`
@@ -30,3 +30,9 @@ https://www.educative.io/collection/page/10370001/4619863233658880/5996310527475
 `echo 'cGFzc3dvcmQxMjMK' | base64 -d`   
 
 `alias k=kubectl`   
+
+# Services enable/start/stop/status
+```
+sudo chkconfig jenkins on
+
+```
