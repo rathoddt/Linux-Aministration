@@ -1,5 +1,17 @@
 # Disk management
 
+https://ioflood.com/blog/lvm-linux-command/
+
+```
+lvextend -L+5G /dev/myvg/mylv
+resize2fs /dev/myvg/mylv
+
+# Output:
+# Size of logical volume myvg/mylv changed from 10.00 GiB (2560 extents) to 15.00 GiB (3840 extents).
+# Logical volume mylv successfully resized.
+
+```
+
 ```
 opt_used=`df -h | grep root | awk '{print $5}' | awk '{print substr($0,1,length($0)-1)}'`
 echo $opt_used
