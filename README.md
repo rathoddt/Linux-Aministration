@@ -36,3 +36,7 @@ https://www.educative.io/collection/page/10370001/4619863233658880/5996310527475
 sudo chkconfig jenkins on
 
 ```
+
+```
+ cat $HOME/.ssh/id_rsa.pub >> $HOME/.ssh/authorized_keys
+ ```
