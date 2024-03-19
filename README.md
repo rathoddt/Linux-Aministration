@@ -40,3 +40,8 @@ sudo chkconfig jenkins on
 ```
  cat $HOME/.ssh/id_rsa.pub >> $HOME/.ssh/authorized_keys
  ```
+
+### Delete files older than a month in /tmp/opt_logs
+```
+find /tmp/opt_logs -type d -mtime +30 -exec rm -rf {} \; 
+```
