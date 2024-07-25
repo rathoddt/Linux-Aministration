@@ -1,4 +1,5 @@
 # SSH
+Windows 10 or newer version has ssh command built into it
 
 ## Using VS Code remote explorer
 
