@@ -1,5 +1,3 @@
-# User and group management commands
-```
 useradd spiderman
 id spiderman
 ls /home
@@ -27,19 +25,3 @@ useradd -g superheros -s /bin/bash -c "Ironman character" -m -d /home/ironman ir
 id ironman
 cat /etc/passwd
 passwd ironman
-history -w /dev/stdout
-```
-
-Talking to user
-```
-users
-wall
-write
-```
-## User authentication and directory services
-- Active Directory
-- IDM = Identity manager
-- WinBIND - Used in Linux to communicate with Windows(samba)
-- OpenLDAP 
-- IBM Directory Server
-- JumpCloud
