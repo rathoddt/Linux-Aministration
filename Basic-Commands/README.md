@@ -2,6 +2,6 @@
 
 listing only directories
 ```
-ls -d*/
+ls -d */
 echo */
 ```
