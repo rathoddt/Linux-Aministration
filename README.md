@@ -54,3 +54,5 @@ Restarting Bash shell
 ```
 exec bash
 ```
+
+Load the environment variables in `env.sh` by running `source env.sh`
