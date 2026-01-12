@@ -48,7 +48,7 @@ find /tmp/opt_logs -type d -mtime +30 -exec rm -rf {} \;
 
 ```
 Windows 10 or newer version has ssh command built into it
-
+```
 
 Restarting Bash shell
 ```
