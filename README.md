@@ -46,9 +46,7 @@ sudo chkconfig jenkins on
 find /tmp/opt_logs -type d -mtime +30 -exec rm -rf {} \; 
 ```
 
-```
 Windows 10 or newer version has ssh command built into it
-```
 
 Restarting Bash shell
 ```
@@ -56,3 +54,19 @@ exec bash
 ```
 
 Load the environment variables in `env.sh` by running `source env.sh`
+
+### Add Python to PATH system-wide (image-safe)
+```
+sudo tee /etc/profile.d/bundled-python.sh >/dev/null <<'EOF'
+export PATH=/usr/lib64/google-cloud-sdk/platform/bundlepythonunix/bin:$PATH
+EOF
+
+sudo chmod 644 /etc/profile.d/bundled-python.sh
+
+source /etc/profile
+
+which python3.12
+python3.12 --version
+
+```
+
